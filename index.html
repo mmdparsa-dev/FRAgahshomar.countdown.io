@@ -5,11 +5,12 @@
 <title>شمارش معکوس فارسی</title>
 
 <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet" />
+
 <style>
   body {
     margin: 0;
-    font-family: 'Vazir', sans-serif;
-    background: radial-gradient(circle at center, #d0d4e6, #a4a9c5);
+  font-family: 'Vazir', sans-serif;
+    background: #121212;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -18,13 +19,13 @@
   }
   .countdown {
     background: #fff;
-    border-radius: 50px;
-    box-shadow: 0 0 25px rgba(255 255 255 / 0.5);
+    border-radius: 999px;
+    box-shadow: 0 0 40px rgba(255 255 255 / 0.5);
     padding: 25px 40px;
     display: flex;
     gap: 30px;
-    color: #007BFF;
-    font-weight: 600;
+    color: #f39c12;
+    font-weight: 700;
     font-size: 2.5rem;
     user-select: none;
     min-width: 600px;
@@ -44,7 +45,7 @@
   }
   .time-label {
     font-size: 1rem;
-    color: #007BFF;
+    color: #f39c12;
     user-select: none;
     margin-top: 0;
   }
@@ -53,7 +54,7 @@
     line-height: 1;
     user-select: none;
     position: relative;
-    transition: transform 1.5s ease, opacity 1.5s ease, filter 1.5s ease;
+    transition: transform 0.5s ease, opacity 0.5s ease, filter 0.5s ease;
   }
 </style>
 </head>
@@ -170,7 +171,7 @@
     elems.milliseconds.textContent = vals.milliseconds;
   }
 
-  setInterval(update, 50);
+  setInterval(update, 0.001);
   update();
 </script>
 </body>
